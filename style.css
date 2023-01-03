@@ -1,0 +1,69 @@
+body{
+  background-color: black;
+}
+
+::selection {
+    color: white;
+    background: #b7b7c8;
+}
+
+#render-frame{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currentlyz*/
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -960px;
+  margin-top: -540px;
+  width: 1920px;
+  height: 1080px;
+  transform-origin: 50% 50%;
+  background: #1b2b4b; /* Old browsers */
+  background: linear-gradient(to bottom, #1b2b4b 0%,#8ba5c3 100%);
+}
+
+#content-container{
+  height: 0px;
+  width: 1235px;
+  position: absolute;
+  top: 815px;
+  left: 150px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  transition: top 300ms, height 300ms;
+  transition-timing-function: linear;
+}
+
+#content-container.shown{
+  height: 590px;
+  top: 225px;
+}
+
+#content-frame{
+  overflow: hidden;
+  top: 225px;
+  left: 150px;
+  position: absolute;
+  width: 1235px;
+  height: 590px;
+}
+
+#content-container.expand{
+  transition: left 0.5s, top 0.5s, width 0.5s, height 0.5s;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#content-container.above-screen{
+  transition: top 400ms;
+  transition-timing-function: linear;
+  top: -100%;
+}
