@@ -1,0 +1,41 @@
+#crawl-text{
+  line-height: 50px;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 40px;
+  width: auto;
+  display: inline-block;
+  transform: translateX(1250px);
+}
+
+#crawl-text.animate{
+  animation: marquee linear infinite;
+}
+
+#crawler-container{
+  height: 50px;
+  width: 0px;
+  position: absolute;
+  top: 820px;
+  left: 150px;
+  overflow: hidden;
+  transition: width 0.8s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#crawler-container.shown{
+  width: 1235px;
+}
+
+#crawler-container.hidden{
+  width: 0px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(1250px);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
