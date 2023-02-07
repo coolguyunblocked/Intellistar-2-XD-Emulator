@@ -1,4 +1,4 @@
-# intellistar-emulator
+# intellistar-2-xd-emulator
 A web application that displays weather information in the same visual presentation as the cable headend unit [Intellistar](https://en.wikipedia.org/wiki/IntelliStar2)
 
 
