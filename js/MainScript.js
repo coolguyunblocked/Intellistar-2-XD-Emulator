@@ -96,9 +96,11 @@ function setMainBackground(){
 }
 
 function checkStormMusic(){
-  if(currentCondition.toLowerCase().includes("storm")){
-    music= new Audio("assets/music/storm.wav");
-  }
+    if(currentCondition.toLowerCase().includes("storm")){
+        // Randomly pick one of the two storm music files
+        let file = Math.random() < 0.5 ? "storm.wav" : "stormclassic.wav";
+        music = new Audio(`assets/music/${file}`);
+    }
 }
 
 function startAnimation(){
