@@ -12,5 +12,4 @@ This is a local forecast segment that airs on The Weather Channel called the "Lo
 4. Press F11 for fullscreen
 
 ## Features
-Most of core animation and logic has been replicated including severe weather alerts, forecast descriptions, crawl text, and the Doppler radar map.
-Enjoy!
+Doppler is still broken
