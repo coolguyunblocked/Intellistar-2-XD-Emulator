@@ -174,7 +174,7 @@ function fetchRadarImages(){
     getElement('radar-container').style.display = 'none';
   }
   // radarImage.src = `https://s.w-x.co/staticmaps/wu/wxtype/none/usa/animate.png`;
-  radarImage.src = `https://dmr4cx9clyd2y.cloudfront.net/southtxsatradloop.gif`;
+  radarImage.src = `https://s.w-x.co/staticmaps/wu/wxtype/none/usa/animate.png`;
   // Use some hacky workarounds the (almost) 4K size of the imagery
   radarImage.width = `1235`
   radarImage.height = `525`
