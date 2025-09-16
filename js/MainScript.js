@@ -95,11 +95,12 @@ function setMainBackground(){
   getElement('background-image').style.backgroundImage = 'url(https://i.imgur.com/kbcB9As.jpeg';
 }
 
+// Pick once per session
+let chosenStormTrack = Math.random() < 0.5 ? "storm.wav" : "stormclassic.wav";
+
 function checkStormMusic(){
     if(currentCondition.toLowerCase().includes("storm")){
-        // Randomly pick one of the two storm music files
-        let file = Math.random() < 0.5 ? "storm.wav" : "stormclassic.wav";
-        music = new Audio(`assets/music/${file}`);
+        music = new Audio(`assets/music/${chosenStormTrack}`);
     }
 }
 
