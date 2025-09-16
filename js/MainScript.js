@@ -95,13 +95,10 @@ function setMainBackground(){
   getElement('background-image').style.backgroundImage = 'url(https://i.imgur.com/kbcB9As.jpeg';
 }
 
-// Pick once per session
-let chosenStormTrack = Math.random() < 0.5 ? "storm.wav" : "stormclassic.wav";
-
 function checkStormMusic(){
-    if(currentCondition.toLowerCase().includes("storm")){
-        music = new Audio(`assets/music/${chosenStormTrack}`);
-    }
+  if(currentCondition.toLowerCase().includes("storm")){
+    music= new Audio("assets/music/storm.wav");
+  }
 }
 
 function startAnimation(){
